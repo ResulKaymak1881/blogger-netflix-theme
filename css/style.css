@@ -39,3 +39,11 @@ body {
   width: 100%;
   display: block;
 }
+/* Blogger varsayılan post listesini gizle */
+.main,
+.blog-posts,
+.post,
+.post-title,
+.post-body {
+  display: none !important;
+}
