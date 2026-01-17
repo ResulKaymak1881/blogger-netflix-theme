@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html b:responsive="true"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:b="http://www.google.com/2005/gml/b"
+      xmlns:data="http://www.google.com/2005/gml/data">
+<head>
+  <b:include data="blog" name="all-head-content"/>
+  <title><data:blog.title/></title>
+
+  <![CDATA[
+  <link rel="stylesheet"
+   href="https://cdn.jsdelivr.net/gh/KULLANICI_ADI/blogger-netflix-theme/css/style.css"/>
+  ]]>
+</head>
+
+<body>
+
+  <div class="container">
+    <div id="rows"></div>
+  </div>
+
+  <![CDATA[
+  <script src="https://cdn.jsdelivr.net/gh/ResulKaymak1881/blogger-netflix-theme/js/app.js"></script>
+  ]]>
+</body>
+</html>
