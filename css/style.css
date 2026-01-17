@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  background: #141414;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 20px;
+}
+
+.row {
+  margin-bottom: 30px;
+}
+
+.row h2 {
+  margin: 0 0 10px;
+}
+
+.slider {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+}
+
+.card {
+  min-width: 180px;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  z-index: 5;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
