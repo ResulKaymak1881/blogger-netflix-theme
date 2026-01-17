@@ -1,49 +1,44 @@
-body {
-  margin: 0;
-  background: #141414;
-  color: #fff;
-  font-family: Arial, sans-serif;
-}
+/* ===== NETFLIX BLOG GRID ===== */
 
-.container {
+.main .blog-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
   padding: 20px;
 }
 
-.row {
-  margin-bottom: 30px;
-}
-
-.row h2 {
-  margin: 0 0 10px;
-}
-
-.slider {
-  display: flex;
-  gap: 12px;
-  overflow-x: auto;
-}
-
-.card {
-  min-width: 180px;
+.post {
+  background: #141414;
   border-radius: 6px;
   overflow: hidden;
-  transition: .3s;
+  transition: transform .3s;
 }
 
-.card:hover {
-  transform: scale(1.1);
-  z-index: 5;
+.post:hover {
+  transform: scale(1.08);
+  z-index: 10;
 }
 
-.card img {
+/* Başlığı gizle (Netflix gibi) */
+.post-title {
+  display: none;
+}
+
+/* Post içeriğini sadeleştir */
+.post-body {
+  margin: 0;
+  padding: 0;
+}
+
+/* İlk görseli afiş yap */
+.post-body img:first-child {
   width: 100%;
+  height: 270px;
+  object-fit: cover;
   display: block;
 }
-/* Blogger varsayılan post listesini gizle */
-.main,
-.blog-posts,
-.post,
-.post-title,
-.post-body {
-  display: none !important;
+
+/* Diğer resimleri gizle */
+.post-body img:not(:first-child) {
+  display: none;
 }
